@@ -1,0 +1,9 @@
+service:
+  image: tomcat8-probe
+  container_name: tomcat8-probe
+  ports:
+    - 8081:8080
+  volumes:
+    - ~/OneDrive/Develop/Docker/docker-bind-folder:/tmp/docker_files
+    - ~/OneDrive/Develop/Docker/docker-bind-folder/tomcat8-probe/logs:/usr/local/tomcat/logs
+
